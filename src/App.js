@@ -75,7 +75,7 @@ class App extends React.Component {
         <div className="products">
           <ProductList
             products={this.state.products}
-            click={this.removeProductHandler}
+            remove={this.removeProductHandler}
             change={this.changeTitleHandler}
           />
         </div>

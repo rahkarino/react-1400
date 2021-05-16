@@ -16,7 +16,7 @@ class Product extends Component {
     return (
       <React.Fragment>
         {this.context.auth ? <p>Logged In!</p> : <p>Please Login!</p>}
-        <p onClick={this.props.click}>
+        <p>
           <b>product title:</b> {this.props.title}
         </p>
         <p>
@@ -28,6 +28,7 @@ class Product extends Component {
           onChange={this.props.change}
           value={this.props.title}
         />
+        <button onClick={this.props.remove}>remove</button>
       </React.Fragment>
     );
   }

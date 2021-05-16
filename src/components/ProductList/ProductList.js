@@ -31,8 +31,8 @@ class ProductList extends Component {
              key={item.id}
              title={item.title}
              price={item.price}
-             change={(e) => this.props.change(e, item.id)}
-             click={this.props.click.bind(this, index)}
+             change={e => this.props.change(e, item.id)}
+             remove={this.props.remove.bind(this, index)}
          />
         )
     })
