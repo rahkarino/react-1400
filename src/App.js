@@ -3,6 +3,7 @@ import ProductList from "./components/ProductList/ProductList";
 import Main from "./components/Main/Main";
 import Wrapper from './hoc/Wrapper'
 import AuthContext from './context/auth-context'
+import Users from './hooks/Users'
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -86,6 +87,9 @@ class App extends React.Component {
        <AuthContext.Provider value={ { auth: this.state.auth, login: this.loginHandler } }>
           <Main click={this.changeProductsVisibility} />
           {products}
+          <br/>
+          <b>users fetched by react hook and axios</b>
+          <Users />
        </AuthContext.Provider>
       </React.Fragment>
     );

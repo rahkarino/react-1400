@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useContext } from "react";
 import AuthContext from '../../context/auth-context'
+import withTooltip from '../../hoc/withTooltip'
 
 const Main = (props) => {
   const btnRef = useRef(null)
@@ -21,6 +22,7 @@ const Main = (props) => {
   return (
     <React.Fragment>
       <h3>Book Store!</h3>
+      {/* {props.showTooltip && <p>Some Tooltip</p>} */}
       <button onClick={props.click} style={btn} ref={btnRef}>
         Show/Hide Products
       </button>

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import "./Product.css";
 import Wrapper from "../../hoc/Wrapper";
 import AuthContext from '../../context/auth-context'
-
+import "./Product.css";
 class Product extends Component {
   constructor(props) {
     super(props)
